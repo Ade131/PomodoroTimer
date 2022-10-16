@@ -10,10 +10,11 @@
 		700CA31A28FC9FE30002DDAB /* PomodoroTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA31928FC9FE30002DDAB /* PomodoroTimerApp.swift */; };
 		700CA31C28FC9FE30002DDAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA31B28FC9FE30002DDAB /* ContentView.swift */; };
 		700CA31E28FC9FE40002DDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700CA31D28FC9FE40002DDAB /* Assets.xcassets */; };
-		700CA32128FC9FE40002DDAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700CA32028FC9FE40002DDAB /* Preview Assets.xcassets */; };
 		700CA32B28FC9FE40002DDAB /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA32A28FC9FE40002DDAB /* PomodoroTimerTests.swift */; };
 		700CA33528FC9FE40002DDAB /* PomodoroTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA33428FC9FE40002DDAB /* PomodoroTimerUITests.swift */; };
 		700CA33728FC9FE40002DDAB /* PomodoroTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA33628FC9FE40002DDAB /* PomodoroTimerUITestsLaunchTests.swift */; };
+		700CA34628FCA3210002DDAB /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA34528FCA3210002DDAB /* PomodoroModel.swift */; };
+		700CA34828FCA3770002DDAB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CA34728FCA3770002DDAB /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +39,13 @@
 		700CA31928FC9FE30002DDAB /* PomodoroTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerApp.swift; sourceTree = "<group>"; };
 		700CA31B28FC9FE30002DDAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		700CA31D28FC9FE40002DDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		700CA32028FC9FE40002DDAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		700CA32628FC9FE40002DDAB /* PomodoroTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700CA32A28FC9FE40002DDAB /* PomodoroTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerTests.swift; sourceTree = "<group>"; };
 		700CA33028FC9FE40002DDAB /* PomodoroTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700CA33428FC9FE40002DDAB /* PomodoroTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITests.swift; sourceTree = "<group>"; };
 		700CA33628FC9FE40002DDAB /* PomodoroTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		700CA34528FCA3210002DDAB /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		700CA34728FCA3770002DDAB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,7 @@
 		700CA30D28FC9FE30002DDAB = {
 			isa = PBXGroup;
 			children = (
-				700CA31828FC9FE30002DDAB /* PomodoroTimer */,
+				700CA34328FCA2350002DDAB /* Shared */,
 				700CA32928FC9FE40002DDAB /* PomodoroTimerTests */,
 				700CA33328FC9FE40002DDAB /* PomodoroTimerUITests */,
 				700CA31728FC9FE30002DDAB /* Products */,
@@ -91,23 +93,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		700CA31828FC9FE30002DDAB /* PomodoroTimer */ = {
+		700CA31828FC9FE30002DDAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				700CA34728FCA3770002DDAB /* Home.swift */,
 				700CA31928FC9FE30002DDAB /* PomodoroTimerApp.swift */,
 				700CA31B28FC9FE30002DDAB /* ContentView.swift */,
 				700CA31D28FC9FE40002DDAB /* Assets.xcassets */,
-				700CA31F28FC9FE40002DDAB /* Preview Content */,
 			);
-			path = PomodoroTimer;
-			sourceTree = "<group>";
-		};
-		700CA31F28FC9FE40002DDAB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				700CA32028FC9FE40002DDAB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = View;
 			sourceTree = "<group>";
 		};
 		700CA32928FC9FE40002DDAB /* PomodoroTimerTests */ = {
@@ -125,6 +119,23 @@
 				700CA33628FC9FE40002DDAB /* PomodoroTimerUITestsLaunchTests.swift */,
 			);
 			path = PomodoroTimerUITests;
+			sourceTree = "<group>";
+		};
+		700CA34328FCA2350002DDAB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				700CA34428FCA2410002DDAB /* ViewModel */,
+				700CA31828FC9FE30002DDAB /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		700CA34428FCA2410002DDAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				700CA34528FCA3210002DDAB /* PomodoroModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				700CA32128FC9FE40002DDAB /* Preview Assets.xcassets in Resources */,
 				700CA31E28FC9FE40002DDAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700CA34628FCA3210002DDAB /* PomodoroModel.swift in Sources */,
 				700CA31C28FC9FE30002DDAB /* ContentView.swift in Sources */,
+				700CA34828FCA3770002DDAB /* Home.swift in Sources */,
 				700CA31A28FC9FE30002DDAB /* PomodoroTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +428,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PomodoroTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -444,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PomodoroTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
