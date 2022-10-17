@@ -100,6 +100,7 @@ struct Home: View {
 }
 
 struct Home_Previews: PreviewProvider {
+    //uselesss comment for git
     static var previews: some View {
         ContentView()
             .environmentObject(PomodoroModel())
